@@ -1,0 +1,135 @@
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(201, 76, 76, .7);
+    border-radius: 6px;
+}
+
+li {
+    float: right;
+}
+
+@media (max-width: 700px) {
+    li {
+        width: 100%;
+        text-align: center;
+    }    
+}
+
+li a,
+.dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 16.5px 24px;
+    text-decoration: none;
+    font-size: large;
+}
+
+li a:hover:not(.active) {
+    background-color: #66a9f7;
+}
+
+.active {
+    background-color: #04AA6D;
+}
+
+.logo {
+    box-sizing: border-box;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 40px;
+    color: yellow;
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #e6dfdf;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 6px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    border-radius: 6px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+
+}
+
+.dropdown:hover .drop-icon {
+    transition: 0.5s;
+    transform: rotateZ(180deg);
+}
+
+
+footer {
+    /* position: absolute; */
+    width: 100%;
+    /* bottom: 8px; */
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 260px;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(100, 100, 224);
+}
+
+form table {
+    margin: 16px;
+}
+
+form table tr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: black;
+    opacity: 0.8;
+}
+
+.footer-left {
+    font-size: large;
+    width: 450px;
+    margin-left: 16px;
+    min-height: 260px;
+}
+
+.footer-right {
+    border: 2px solid #949398FF;
+    box-shadow: 12px 12px 5px #949398FF;
+    margin: 16px 0px;
+    width: 450px;
+    background-color: rgb(231, 220, 148);
+}
+
+.fixed {
+    position: fixed;
+    background-color: #f1f1f1;
+    opacity: 0.7;
+    right: 0px;
+    bottom: 0px;
+    z-index: 100;
+}
