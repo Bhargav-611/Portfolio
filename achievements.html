@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/header_footer.css">
+    <title>Achievements</title>
+
+    <style>
+        * {
+            text-decoration: none;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .time-line {
+            position: relative;
+            max-width: 1200px;
+            margin: 100px auto;
+        }
+
+        .container {
+            position: relative;
+            padding: 10px 50px;
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        .text-box {
+            padding: 20px 30px;
+            background-color: #fff;
+            position: relative;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        .left {
+            left: 0;
+        }
+
+        .right {
+            left: 50%;
+        }
+
+        .container img {
+            position: absolute;
+            width: 40px;
+            top: 32px;
+            right: -20px;
+            z-index: 10;
+        }
+
+        .right img {
+            left: -20px;
+        }
+
+        .time-line::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            margin-left: -3px;
+            height: 100%;
+            background: #fff;
+            top: 0;
+            left: 50%;
+            z-index: -1;
+        }
+
+        .left-arrow {
+            height: 0px;
+            width: 0px;
+            position: absolute;
+            top: 28px;
+            z-index: 1;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            border-left: 15px solid rgb(255, 255, 255);
+            right: -14px;
+        }
+
+        .right-arrow {
+            height: 0px;
+            width: 0px;
+            position: absolute;
+            top: 28px;
+            z-index: 1;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            border-right: 15px solid rgb(255, 255, 255);
+            left: -14px;
+        }
+
+        .text-box p {
+            text-align: justify;
+        }
+
+        .text-box h2 {
+            font-weight: 600;
+        }
+
+        .text-box small {
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        @media screen and (max-width: 600px) {
+
+            .time-line {
+                margin: 50px auto;
+            }
+
+            .time-line::after {
+                left: 31px;
+            }
+
+            .container {
+                width: 100%;
+                padding-left: 80px;
+                padding-right: 25px;
+
+            }
+
+            .text-box {
+                font-size: 13px;
+            }
+
+            .text-box small {
+                margin-bottom: 12px;
+            }
+
+            .right {
+                left: 0;
+            }
+
+            .right img,
+            .left img {
+                left: 10px;
+            }
+
+            .left-arrow,
+            .right-arrow {
+                border-right: 15px solid white;
+                border-left: 0px;
+                left: -14px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="back-img" src="../photo/back.jpg" alt="Background Image">
+        <ul class="navbar">
+            <li><a href="../html/feedback.html">Feedback</a></li>
+            <li><a href="../html/contact.html">Contact</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">More &nbsp;<i
+                        class="drop-icon fa-solid fa-angle-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="../html/academic.html">Academics</a>
+                    <a href="../html/achievements.html">Achievements</a>
+                    <a href="../html/startup.html">Startup ideas</a>
+                    <a href="../html/slogan.html">Slogan Spectrum</a>
+                </div>
+            </li>
+            <li><a href="../html/hobbis.html">Hobbies</a></li>
+            <li><a href="../html/index.html">Home</a></li>
+        </ul>
+    </header>
+
+    <div class="time-line">
+
+        <div class="container left">
+            <img src="../photo/C.png" alt="C language">
+            <div class="text-box">
+                <h2>C Language</h2>
+                <small>2023</small>
+                <p>
+                    This achievement opens doors to endless possibilities in the world of coding. Keep exploring, keep
+                    learning, and let your passion for programming guide you to new heights!
+                </p>
+                <span class="left-arrow"></span>
+            </div>
+        </div>
+        <div class="container right">
+            <img src="../photo/C++.png" alt="C++ language">
+            <div class="text-box">
+                <h2>C++ Language</h2>
+                <small>2024</small>
+                <p>
+                    As you continue your coding journey, remember the problem-solving skills and perseverance you've
+                    cultivated. Let your newfound knowledge fuel your creativity and drive for innovation.
+                </p>
+                <span class="right-arrow"></span>
+            </div>
+        </div>
+        <div class="container left">
+            <img src="../photo/HTML.png" alt="HTML">
+            <div class="text-box">
+                <h2>HTML</h2>
+                <small>2024</small>
+                <p>
+                    As you continue to explore the vast realm of web development, remember the excitement of your first
+                    <b>html</b> tag and the satisfaction of seeing your creations come to life in the browser. Let this
+                    achievement be a stepping stone to even greater heights in your coding journey.
+                </p>
+                <span class="left-arrow"></span>
+            </div>
+        </div>
+        <div class="container right">
+            <img src="../photo/CSS.png" alt="php and MySQL">
+            <div class="text-box">
+                <h2>CSS</h2>
+                <small>2024</small>
+                <p>
+                    As you venture further into the realm of web development, remember the satisfaction of your first
+                    successful CSS layout and the joy of seeing your designs come to life in the browser. Let this
+                    achievement be a testament to your perseverance and passion for mastering new skills.
+                </p>
+                <span class="right-arrow"></span>
+            </div>
+        </div>
+        <div class="container left">
+            <img src="../photo/PHP-and-MySQL.png" alt="php and MySQL">
+            <div class="text-box">
+                <h2>PHP and MySQL</h2>
+                <small>2024</small>
+                <p>
+                    But wait, there's more! As you bask in the glory of your achievement, remember that this is just the
+                    beginning. The world of web development is vast and ever-evolving, with endless opportunities to
+                    explore. From diving deeper into backend frameworks to experimenting with advanced database
+                    architectures, there's always something new to learn and master.
+                </p>
+                <span class="left-arrow"></span>
+            </div>
+        </div>
+        <div class="container right">
+            <img src="../photo/Obstacle.png" alt="Opstacle Race">
+            <div class="text-box">
+                <h2>Obstacle Race</h2>
+                <small>2024</small>
+                <p>
+                    Your ability to secure such a prestigious position in a challenging competition like the Obsecal
+                    Race is a testament to your skills and determination. Your achievement is truly commendable and
+                    deserving of recognition.
+                </p>
+                <span class="right-arrow"></span>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p class="fixed"><i class="fa-regular fa-copyright"></i>Copyright 2024</p>
+        <div class="footer-left">
+            <p>Contect :&nbsp; 9988587979</p>
+            <p>Email &nbsp; &nbsp;: &nbsp;<a href="#">23ceuos015@ddu.ac.in</a></p>
+            <p>LinkIn &nbsp;: &nbsp;<a href="https://in.linkedin.com/in/bhargav-chalodiya-869207291">Bhargav
+                    Chalodiya</a></p>
+        </div>
+
+    </footer>
+</body>
