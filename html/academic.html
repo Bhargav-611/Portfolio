@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/header_footer.css">
+    <title>Document</title>
+
+    <style>
+        * {
+            text-decoration: none;
+            margin: 0;
+        }
+
+       
+        .main-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 40rem;
+            width: auto;
+        }
+
+        .content-table {
+            border-collapse: collapse;
+            margin: 25px 0px;
+            font-size: 1.5em;
+            min-width: 10rem;
+            min-height: 15rem;
+            overflow: hidden;
+            border-radius: 6px;
+        }
+
+        .content-table .theader {
+            background-color: #009879 !important;
+            color: #fff;
+            text-align: left;
+            margin: 10px 10px;
+            overflow: hidden;
+            font-weight: bold;
+        }
+
+        .content-table th,
+        .content-table td {
+            padding: 12px 15px;
+        }
+
+        .content-table tr {
+            border-bottom: 1px solid #060404;
+        }
+
+        .content-table tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        .content-table tr:nth-of-type(odd) {
+            background-color: #d4d4d4;
+        }
+
+        @media screen and (max-width:700px) {
+            .content-table {
+                width: 85%;
+            }
+        }
+
+        @media screen and (max-width:500px) {
+            .content-table {
+                width: 85%;
+            
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <img class="back-img" src="../photo/back.jpg" alt="">
+        <ul class="navbar">
+            <li><a href="../html/feedback.html">Feedback</a></li>
+            <li><a href="../html/contact.html">Contact</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">More &nbsp;<i
+                        class="drop-icon fa-solid fa-angle-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="../html/academic.html">Academics</a>
+                    <a href="../html/achievements.html">Achievements</a>
+                    <a href="../html/startup.html">Startup ideas</a>
+                    <a href="../html/slogan.html">Slogan Spectrum</a>
+                </div>
+            </li>
+            <li><a href="../html/hobbis.html">Hobbies</a></li>
+            <li><a href="../html/index.html">Home</a></li>
+        </ul>
+    </header>
+
+    <div class="main-content">
+        <table class="content-table">
+            <tr class="theader">
+                <th>Qualification</th>
+                <th>PR</th>
+                <th>Borad</th>
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td>S.S.C.</td>
+                <td>95.75</td>
+                <td>G.S.E.B.</td>
+                <td>2021</td>
+            </tr>
+            <tr>
+                <td>H.S.C.</td>
+                <td>96.96</td>
+                <td>G.S.E.B.</td>
+                <td>2023</td>
+            </tr>
+            <tr>
+                <td>Gujcet</td>
+                <td>99.75</td>
+                <td>G.S.E.B.</td>
+                <td>2023</td>
+            </tr>
+            <tr>
+                <td>JEE main</td>
+                <td>95.76</td>
+                <td>G.S.E.B.</td>
+                <td>2023</td>
+            </tr>
+        </table>
+    </div>
+    </div>
+
+
+    <footer>
+        <p class="fixed"><i class="fa-regular fa-copyright"></i>Copyright 2024</p>
+        <div class="footer-left">
+            <p>Contect :&nbsp; 9988587979</p>
+            <p>Email &nbsp; &nbsp;: &nbsp;<a href="#">23ceuos015@ddu.ac.in</a></p>
+            <p>LinkIn &nbsp;: &nbsp;<a href="https://in.linkedin.com/in/bhargav-chalodiya-869207291">Bhargav
+                    Chalodiya</a></p>
+        </div>
+
+    </footer>
+</body>
+
+</html>

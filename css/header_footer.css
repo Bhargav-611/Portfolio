@@ -1,9 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+}
+
+.back-img {
+    position: absolute;
+    position: fixed;
+    opacity: 0.4;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
 .navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgba(201, 76, 76, .7);
+    background-color: #6a6a6a;
     border-radius: 6px;
 }
 
@@ -12,10 +32,36 @@ li {
 }
 
 @media (max-width: 700px) {
+    .navbar {
+        width: 100%;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
     li {
         width: 100%;
         text-align: center;
-    }    
+        flex: 0 0 auto;
+        margin: auto;
+    }
+
+    .dropdown-content {
+        width: 100%;
+    }
+
+    li a {
+        width: 100%;
+        padding: 16.5px 0px !important;
+    }
+
+    .dropdown-content a {
+        width: 100%;
+        padding: 12px 0 !important;
+        text-align: center !important;
+    }
 }
 
 li a,
@@ -25,7 +71,7 @@ li a,
     text-align: center;
     padding: 16.5px 24px;
     text-decoration: none;
-    font-size: large;
+    font-size: 20px;
 }
 
 li a:hover:not(.active) {
@@ -36,16 +82,7 @@ li a:hover:not(.active) {
     background-color: #04AA6D;
 }
 
-.logo {
-    box-sizing: border-box;
-    float: left;
-    display: block;
-    text-align: center;
-    padding: 14px 40px;
-    color: yellow;
-    font-size: 22px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+
 
 li.dropdown {
     display: inline-block;
@@ -78,7 +115,6 @@ li.dropdown {
 
 .dropdown:hover .dropdown-content {
     display: block;
-
 }
 
 .dropdown:hover .drop-icon {
@@ -88,42 +124,25 @@ li.dropdown {
 
 
 footer {
-    /* position: absolute; */
     width: 100%;
-    /* bottom: 8px; */
     display: flex;
     flex-wrap: wrap;
-    min-height: 260px;
+    min-height: 40px;
     align-items: center;
     justify-content: space-evenly;
-    background-color: rgb(100, 100, 224);
+    background-color: rgb(74, 68, 68);
 }
 
-form table {
-    margin: 16px;
-}
-
-form table tr {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    color: black;
-    opacity: 0.8;
-}
 
 .footer-left {
     font-size: large;
     width: 450px;
-    margin-left: 16px;
-    min-height: 260px;
+    margin: 20px;
+    height: 100%;
+    color: #fff;
 }
 
-.footer-right {
-    border: 2px solid #949398FF;
-    box-shadow: 12px 12px 5px #949398FF;
-    margin: 16px 0px;
-    width: 450px;
-    background-color: rgb(231, 220, 148);
-}
+
 
 .fixed {
     position: fixed;
@@ -132,4 +151,5 @@ form table tr {
     right: 0px;
     bottom: 0px;
     z-index: 100;
+    padding: 2px;
 }

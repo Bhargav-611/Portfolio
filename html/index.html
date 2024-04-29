@@ -13,27 +13,15 @@
             margin: 0;
         }
 
-        .back-img {
-            position: absolute;
-            position: fixed;
-            opacity: 0.4;
-            margin: 0px;
-            padding: 0px;
-            width: auto;
-            height: auto;
-            z-index: -1;
-            border-top-left-radius: 6px;
-            border-top-right-radius: 6px;
-        }
-
 
         .content-main {
             display: flex;
-            align-items: center;  
+            align-items: center;
             justify-content: center;
             min-height: 680px;
             margin: 2rem;
         }
+
         .content {
             background-color: rgba(10, 10, 0, .5);
             display: flex;
@@ -44,10 +32,21 @@
             padding: 24px;
             border-radius: 6px;
         }
+
         @media (max-width: 1242px) {
             .content {
                 flex-direction: column-reverse;
             }
+
+            .content-left li {
+                text-align: justify;
+            }
+
+            .aboutme {
+                display: flex;
+                flex-direction: column;
+            }
+
         }
 
         .content-left {
@@ -56,6 +55,17 @@
             min-height: 160px;
             font-size: large;
             text-align: justify;
+        }
+
+        .content-left li {
+            margin: 6px 6px;
+            float: left;
+            font-size: large;
+        }
+
+        .content-left p {
+            margin: 6px;
+            font-size: 19px;
         }
 
         .photo-right img {
@@ -69,14 +79,16 @@
     <header>
         <img class="back-img" src="../photo/back.jpg" alt="">
         <ul class="navbar">
-            <li class="logo"><i class="fa-brands fa-steam" style="color: yellow; margin-right: 15px;"></i>BHARGAV</li>
+            <li><a href="../html/feedback.html">Feedback</a></li>
             <li><a href="../html/contact.html">Contact</a></li>
             <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Dropdown &nbsp;<i class="drop-icon fa-solid fa-angle-down"></i></a>
+                <a href="javascript:void(0)" class="dropbtn">More &nbsp;<i
+                        class="drop-icon fa-solid fa-angle-down"></i></a>
                 <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
+                    <a href="../html/academic.html">Academics</a>
+                    <a href="../html/achievements.html">Achievements</a>
+                    <a href="../html/startup.html">Startup ideas</a>
+                    <a href="../html/slogan.html">Slogan Spectrum</a>
                 </div>
             </li>
             <li><a href="../html/hobbis.html">Hobbies</a></li>
@@ -87,79 +99,43 @@
     <div class="content-main">
         <div class="content">
             <div class="content-left">
-                <h2>About Me!</h2><br>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, ea. Praesentium totam minima
-                laboriosam dolore voluptatibus pariatur provident aperiam? A maiores veniam veritatis fugiat ea,
-                consectetur dolorum labore provident distinctio. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, commodi ratione, omnis maiores sapiente nesciunt nobis nulla aperiam sit illum molestiae. Qui sapiente distinctio recusandae, aspernatur soluta magnam cumque accusantium molestiae iusto?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ratione architecto laboriosam, atque repellat quidem impedit sit minima fugit voluptatem iure, ullam ad praesentium eos veritatis assumenda molestias beatae repudiandae? Fuga, facere expedita. Odit delectus rem, voluptates error quia harum dolorum distinctio? Amet accusamus rerum consequuntur magnam quam omnis minus.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit minus et placeat dolorum error harum voluptates recusandae. Suscipit voluptatibus sunt natus deleniti ut nisi nesciunt earum cupiditate magnam? Ducimus, voluptas!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit minus et placeat dolorum error harum voluptates recusandae. Suscipit voluptatibus sunt natus deleniti ut nisi nesciunt earum cupiditate magnam? Ducimus, voluptas!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit minus et placeat dolorum error harum voluptates recusandae. Suscipit voluptatibus sunt natus deleniti ut nisi nesciunt earum cupiditate magnam? Ducimus, voluptas!
+                <h1>About Me!</h1><br>
+                <ul class="aboutme">
+                    <li>Hi there! I'm <b>Chalodiya Bhargav</b>, a first-year college student passionate about
+                        programming and
+                        technology. Currently pursuing my degree in Computer Science, I'm diving headfirst into the
+                        world of coding and software development.
+                    </li>
+                    <li>Though I'm just beginning my journey, I'm already fascinated by the endless possibilities that
+                        programming offers. From building basic applications to exploring complex algorithms, every line
+                        of code I write is a step toward mastering this dynamic field.</li>
+                    <li>
+                        I'm eager to learn and grow, soaking up knowledge from my courses and seeking out opportunities
+                        to expand my skills. Outside of class, you can often find me tinkering with personal projects,
+                        exploring new programming languages, or participating in coding competitions.
+                    </li>
+                    <li>
+                        I believe in the importance of collaboration and community, and I'm excited to connect with
+                        fellow programmers, share ideas, and embark on this learning adventure together.
+                    </li>
+                </ul>
+                <p>Let's code something amazing!</p>
             </div>
             <div class="photo-right">
-                <img src="../photo/person.jpg" alt="">
+                <img src="../photo/person.jpeg" alt="">
             </div>
         </div>
     </div>
-    <p class="fixed"><i class="fa-regular fa-copyright"></i>Copyright 2024</p>
 
     <footer>
+        <p class="fixed"><i class="fa-regular fa-copyright"></i>Copyright 2024</p>
         <div class="footer-left">
             <p>Contect :&nbsp; 9988587979</p>
             <p>Email &nbsp; &nbsp;: &nbsp;<a href="#">23ceuos015@ddu.ac.in</a></p>
             <p>LinkIn &nbsp;: &nbsp;<a href="https://in.linkedin.com/in/bhargav-chalodiya-869207291">Bhargav
                     Chalodiya</a></p>
         </div>
-        <div class="footer-right">
-            <h2 style="text-align: center;">FeedBack</h2>
-            <form action="index.php" target="_self" method="post">
-                <table>
-                    <tr>
-                        <td>
-                            <label for="name">Enter Full Name*: </label><br><br>
-                        </td>
-                        <td>
-                            <input type="text" name="name" placeholder="Name......" required><br><br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="textarea">Feedback: </label>
 
-                        </td>
-                        <td>
-                            <textarea placeholder="Enter Your Experence......" rows="10" cols="30" name=""
-                                id=""></textarea><br><br>
-
-
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="Gmail">Gmail*: </label>
-
-                        </td>
-                        <td>
-                            <input type="email" name="Gmail" placeholder="abc@gmail.com" required><br><br>
-
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-
-                        </td>
-                        <td>
-                            <input type="submit" name="Submit" id="">
-
-                            <input type="reset" name="Reset" id="">
-
-                        </td>
-                    </tr>
-
-
-                </table>
-            </form>
-        </div>
     </footer>
 
 </body>

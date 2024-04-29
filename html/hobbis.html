@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../css/header_footer.css">
     <title>My Hobbies</title>
@@ -9,16 +10,6 @@
         * {
             margin: 0;
             text-decoration: none;
-        }
-
-
-        .back-img {
-            position: absolute;
-            position: fixed;
-            opacity: 0.6;
-            z-index: -1;
-            height: 100%;
-            width: 100%;
         }
 
         h1,
@@ -31,6 +22,10 @@
             max-width: 80%;
             margin: auto;
             overflow: hidden;
+        }
+
+        .container h1 {
+            margin: 12px 0px;
         }
 
         .hobby-section {
@@ -76,7 +71,7 @@
         }
 
         .audio {
-            width: 170px;
+            width: 100%;
             margin-top: 15px;
 
         }
@@ -84,21 +79,19 @@
 </head>
 
 <body>
-    <img src="https://en.idei.club/uploads/posts/2023-06/1687765365_en-idei-club-p-wooden-flat-desk-di
-zain-instagram-2.jpg" class="back-img">
-
-
     <header>
         <img class="back-img" src="../photo/back.jpg" alt="">
         <ul class="navbar">
-            <li class="logo"><i class="fa-brands fa-steam" style="color: yellow; margin-right: 15px;"></i>BHARGAV</li>
+            <li><a href="../html/feedback.html">Feedback</a></li>
             <li><a href="../html/contact.html">Contact</a></li>
             <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Dropdown &nbsp;<i class="drop-icon fa-solid fa-angle-down"></i></a>
+                <a href="javascript:void(0)" class="dropbtn">More &nbsp;<i
+                        class="drop-icon fa-solid fa-angle-down"></i></a>
                 <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
+                    <a href="../html/academic.html">Academics</a>
+                    <a href="../html/achievements.html">Achievements</a>
+                    <a href="../html/startup.html">Startup ideas</a>
+                    <a href="../html/slogan.html">Slogan Spectrum</a>
                 </div>
             </li>
             <li><a class="active" href="../html/hobbis.html">Hobbies</a></li>
@@ -117,18 +110,10 @@ zain-instagram-2.jpg" class="back-img">
                 fiction,
                 fantasy, and mystery. Here are some of my recent reads:</p>
             <div class="hobby-box box1">
-                <img class="hobby-image" src="https://img.freepik.com/free-vector/smart-boy-reading-book_1308-146055.jpg?w=740&t=st
-=1711013105~exp=1711013705~hmac=53eb66948af4bdd096840a30973dffd969b235326b54fff
-17f7821ea48a85801" alt="Reading 1">
-                <img class="hobby-image" src="https://img.freepik.com/free-vector/smart-boy-reading-book_1308-146055.jpg?w=740&t=st
-=1711013105~exp=1711013705~hmac=53eb66948af4bdd096840a30973dffd969b235326b54fff
-17f7821ea48a85801" alt="Reading 2">
-                <img class="hobby-image" src="https://img.freepik.com/free-vector/smart-boy-reading-book_1308-146055.jpg?w=740&t=st
-=1711013105~exp=1711013705~hmac=53eb66948af4bdd096840a30973dffd969b235326b54fff
-17f7821ea48a85801" alt="Reading 3">
-                <img class="hobby-image" src="https://img.freepik.com/free-vector/smart-boy-reading-book_1308-146055.jpg?w=740&t=st
-=1711013105~exp=1711013705~hmac=53eb66948af4bdd096840a30973dffd969b235326b54fff
-17f7821ea48a85801" alt="Reading 3">
+                <img class="hobby-image" src="../photo/reading1.jpg" alt="Reading 1">
+                <img class="hobby-image" src="../photo/reading2.jpg" alt="Reading 2">
+                <img class="hobby-image" src="../photo/reading3.jpg" alt="Reading 3">
+                <img class="hobby-image" src="../photo/reading4.jpg" alt="Reading 4">
             </div>
         </div>
         <div class="hobby-section">
@@ -136,15 +121,11 @@ zain-instagram-2.jpg" class="back-img">
             <p class="hobby-content">Painting is another hobby of mine. I love experimenting with
                 different mediums and techniques. Here are some of my recent paintings:</p>
             <div class="hobby-box box2">
-                <img class="hobby-image" src="https://en.idei.club/uploads/posts/2023-06/1687434569_en-idei-club-p-painting-hobby-dizai
-n-krasivo-7.jpg" alt="Painting 1">
+                <img class="hobby-image" src="../photo/painting1.jpg" alt="Painting 1">
 
-                <img class="hobby-image" src="https://en.idei.club/uploads/posts/2023-06/1687434569_en-idei-club-p-painting-hobby-dizai
-n-krasivo-7.jpg" alt="Painting 2">
-                <img class="hobby-image" src="https://en.idei.club/uploads/posts/2023-06/1687434569_en-idei-club-p-painting-hobby-dizai
-n-krasivo-7.jpg" alt="Painting 3">
-                <img class="hobby-image" src="https://en.idei.club/uploads/posts/2023-06/1687434569_en-idei-club-p-painting-hobby-dizai
-n-krasivo-7.jpg" alt="Painting 3">
+                <img class="hobby-image" src="../photo/painting2.jpg" alt="Painting 2">
+                <img class="hobby-image" src="../photo/painting3.jpg" alt="Painting 3">
+                <img class="hobby-image" src="../photo/painting4.jpg" alt="Painting 4">
             </div>
         </div>
         <div class="hobby-section">
@@ -154,32 +135,28 @@ n-krasivo-7.jpg" alt="Painting 3">
                 genres. Here are someof my recent favorites:</p>
             <div class="hobby_img box3">
                 <div class="div-music">
-                    <img class="hobby-image" src="https://as2.ftcdn.net/v2/jpg/05/70/44/95/1000_F_570449562_LZwgMcEbY1yRVQFNZVQ1t
-sgiTylXRdP4.jpg" alt="Painting 1">
+                    <img class="hobby-image" src="../photo/music1.jpg" alt="Painting 1">
                     <audio controls class="audio">
-                        <source src="music.mp3" type="audio/mpeg">
+                        <source src="../music/music1.mp3" type="audio/mpeg">
                     </audio>
                 </div>
                 <div class="div-music">
-                    <img class="hobby-image" src="https://as2.ftcdn.net/v2/jpg/05/70/44/95/1000_F_570449562_LZwgMcEbY1yRVQFNZVQ1t
-sgiTylXRdP4.jpg" alt="Painting 2">
+                    <img class="hobby-image" src="../photo/music2.jpg" alt="Painting 2">
                     <audio controls class="audio">
-                        <source src="music.mp3" type="audio/mpeg">
+                        <source src="../music/music2.mp3" type="audio/mpeg">
                     </audio>
                 </div>
                 <div class="div-music">
-                    <img class="hobby-image" src="https://as2.ftcdn.net/v2/jpg/05/70/44/95/1000_F_570449562_LZwgMcEbY1yRVQFNZVQ1t
-sgiTylXRdP4.jpg" alt="Painting 3">
+                    <img class="hobby-image" src="../photo/music3.jpg" alt="Painting 3">
                     <audio controls class="audio">
-                        <source src="music.mp3" type="audio/mpeg">
+                        <source src="../music/music3.mp3" type="audio/mpeg">
                     </audio>
                 </div>
                 <div class="div-music">
 
-                    <img class="hobby-image" src="https://as2.ftcdn.net/v2/jpg/05/70/44/95/1000_F_570449562_LZwgMcEbY1yRVQFNZVQ1t
-sgiTylXRdP4.jpg" alt="Painting 3">
+                    <img class="hobby-image" src="../photo/music4.jpg" alt="Painting 4">
                     <audio controls class="audio">
-                        <source src="music.mp3" type="audio/mpeg">
+                        <source src="../music/music4.mp3" type="audio/mpeg">
                     </audio>
                 </div>
             </div>
@@ -187,62 +164,14 @@ sgiTylXRdP4.jpg" alt="Painting 3">
     </div>
 
     <footer>
+        <p class="fixed"><i class="fa-regular fa-copyright"></i>Copyright 2024</p>
         <div class="footer-left">
             <p>Contect :&nbsp; 9988587979</p>
             <p>Email &nbsp; &nbsp;: &nbsp;<a href="#">23ceuos015@ddu.ac.in</a></p>
             <p>LinkIn &nbsp;: &nbsp;<a href="https://in.linkedin.com/in/bhargav-chalodiya-869207291">Bhargav
                     Chalodiya</a></p>
         </div>
-        <div class="footer-right">
-            <h2 style="text-align: center;">FeedBack</h2>
-            <form action="index.php" target="_self" method="post">
-                <table>
-                    <tr>
-                        <td>
-                            <label for="name">Enter Full Name*: </label><br><br>
-                        </td>
-                        <td>
-                            <input type="text" name="name" placeholder="Name......" required><br><br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="textarea">Feedback: </label>
 
-                        </td>
-                        <td>
-                            <textarea placeholder="Enter Your Experence......" rows="10" cols="30" name=""
-                                id=""></textarea><br><br>
-
-
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="Gmail">Gmail*: </label>
-
-                        </td>
-                        <td>
-                            <input type="email" name="Gmail" placeholder="abc@gmail.com" required><br><br>
-
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-
-                        </td>
-                        <td>
-                            <input type="submit" name="Submit" id="">
-
-                            <input type="reset" name="Reset" id="">
-
-                        </td>
-                    </tr>
-
-
-                </table>
-            </form>
-        </div>
     </footer>
 
 </body>
