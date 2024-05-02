@@ -133,6 +133,17 @@ li.dropdown {
     transform: rotateZ(0deg);
 }
 
+.howerimg:hover {
+    transition: 0.5s;
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+.howerimg:not(:hover) {
+    transition: 0.5s;
+    transform: scale(1);
+}
+
 footer {
     width: 100%;
     display: flex;
@@ -140,7 +151,7 @@ footer {
     min-height: 40px;
     align-items: center;
     justify-content: space-evenly;
-    background-color: rgb(74, 68, 68);
+    background-color: #6a6a6a;
 }
 
 
@@ -149,7 +160,6 @@ footer {
     width: 450px;
     margin: 20px;
     height: 100%;
-    color: #fff;
 }
 
 

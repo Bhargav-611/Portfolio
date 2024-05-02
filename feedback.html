@@ -77,13 +77,14 @@
             margin-bottom: 2%;
             padding: 4px;
             border-radius: 20px;
-            background-color: blue;
+            background-color: red;
             color: #fff;
             font-size: large;
         }
 
         .submit-button:hover {
-            cursor: pointer;
+            cursor: pointer;    
+            background-color: #04AA6D;
         }
 
         @media screen and (max-width:700px) {
@@ -119,12 +120,10 @@
 </head>
 
 <body>
-    <img class="back-img" src="./photo/back.jpg" alt="">
-
-    <header>
+    <nav>
         <img class="back-img" src="./photo/back.jpg" alt="">
         <ul class="navbar">
-            <li class="active" ><a href="./feedback.html">Feedback</a></li>
+            <li class="active"><a href="./feedback.html">Feedback</a></li>
             <li><a href="./contact.html">Contact</a></li>
             <li class="dropdown">
                 <span class="dropbtn">More &nbsp;
@@ -140,7 +139,7 @@
             <li><a href="./hobbis.html">Hobbies</a></li>
             <li><a href="./index.html">Home</a></li>
         </ul>
-    </header>
+    </nav>
 
     <p class="fixed"><i class="fa-regular fa-copyright"></i>Copyright 2024</p>
     <div class="outer-box">
@@ -162,7 +161,7 @@
                     <textarea name="textarea" id="" placeholder="Give your opinion"></textarea>
                 </div>
                 <br>
-                <input class="submit-button" type="submit" name="Submit" id="">
+                <input class="submit-button howerimg" type="submit" name="Submit" id="">
 
 
                 </table>
