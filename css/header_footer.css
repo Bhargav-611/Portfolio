@@ -74,7 +74,8 @@ li a,
     font-size: 20px;
 }
 
-li a:hover:not(.active) {
+li a:hover:not(.active),li span:hover {
+    cursor: pointer;
     background-color: #66a9f7;
 }
 
@@ -127,6 +128,10 @@ li.dropdown {
     transform: rotateZ(180deg);
 }
 
+.dropdown:not(:hover) .drop-icon {
+    transition: 0.5s;
+    transform: rotateZ(0deg);
+}
 
 footer {
     width: 100%;
