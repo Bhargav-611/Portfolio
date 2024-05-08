@@ -13,17 +13,17 @@
             padding: 0;
         }
 
-
         .time-line {
-            position: relative;
-            max-width: 1200px;
-            margin: 100px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
         }
+       
 
         .container {
-            position: relative;
             padding: 10px 50px;
-            width: 50%;
+            max-width: 600px;
             box-sizing: border-box;
         }
 
@@ -33,62 +33,51 @@
             position: relative;
             border-radius: 6px;
             font-size: 15px;
+            min-height: 160px;
         }
 
-        .left {
-            left: 0;
-        }
-
-        .right {
-            left: 50%;
-        }
-
-        .container img {
-            position: absolute;
+        .container .img-right {
+            position: relative;
             width: 40px;
-            top: 32px;
-            right: -20px;
+            top: 90px;
+            left: -17%;
             z-index: 10;
+            margin-bottom: 25px;
+            margin-left: 15px;
         }
 
-        .right img {
-            left: -20px;
+        .container .img-left {
+            position: relative;
+            width: 40px;
+            top: 90px;
+            left: 102%;
+            z-index: 10;
+            margin-bottom: 25px;
+            margin-left: 15px;
         }
 
-        .time-line::after {
-            content: '';
-            position: absolute;
-            width: 6px;
-            margin-left: -3px;
-            height: 100%;
-            background: #fff;
-            top: 0;
-            left: 50%;
-            z-index: -1;
-        }
-
-        .left-arrow {
-            height: 0px;
-            width: 0px;
-            position: absolute;
-            top: 28px;
-            z-index: 1;
+       
+        .arrow-left {
+            position: relative;
+            top: 25px;
+            left: 222px;
+            width: 0;
+            height: 0;
+            z-index: 10;
             border-top: 15px solid transparent;
             border-bottom: 15px solid transparent;
             border-left: 15px solid rgb(255, 255, 255);
-            right: -14px;
         }
-
-        .right-arrow {
-            height: 0px;
-            width: 0px;
-            position: absolute;
-            top: 28px;
-            z-index: 1;
+        
+        .arrow-right {
+            position: relative;
+            top: 25px;
+            left: -34.5px;
+            width: 0;
+            height: 0;
             border-top: 15px solid transparent;
             border-bottom: 15px solid transparent;
             border-right: 15px solid rgb(255, 255, 255);
-            left: -14px;
         }
 
         .text-box p {
@@ -104,21 +93,13 @@
             margin-bottom: 15px;
         }
 
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 700px) {
 
-            .time-line {
-                margin: 50px auto;
-            }
 
-            .time-line::after {
-                left: 31px;
-            }
 
             .container {
-                width: 100%;
-                padding-left: 80px;
-                padding-right: 25px;
-
+                width: 80%;
+                padding: 0 25px;
             }
 
             .text-box {
@@ -129,20 +110,26 @@
                 margin-bottom: 12px;
             }
 
-            .right {
-                left: 0;
+            .container .img-left {
+                left: -14%;
             }
 
-            .right img,
-            .left img {
-                left: 10px;
+            .container .img-right {
+                left: -14%;
             }
 
-            .left-arrow,
-            .right-arrow {
-                border-right: 15px solid white;
-                border-left: 0px;
-                left: -14px;
+            .container img {
+                margin-right: 10px;
+            }
+
+            .arrow-left {
+                border-right: 0;
+                border-left: 0;
+            }
+
+            .arrow-right {
+                border-right: 0;
+                border-left: 0;
             }
 
         }
@@ -173,8 +160,9 @@
 
     <div class="time-line">
 
-        <div class="container left">
-            <img src="./photo/C.png" alt="C language">
+        <div class="container">
+            <img class="img-left" src="./photo/C.png" alt="C language">
+            <span class="arrow-left"></span>
             <div class="text-box">
                 <h2>C Language</h2>
                 <small>2023</small>
@@ -182,11 +170,11 @@
                     This achievement opens doors to endless possibilities in the world of coding. Keep exploring, keep
                     learning, and let your passion for programming guide you to new heights!
                 </p>
-                <span class="left-arrow"></span>
             </div>
         </div>
-        <div class="container right">
-            <img src="./photo/C++.png" alt="C++ language">
+        <div class="container">
+            <img class="img-right" src="./photo/C++.png" alt="C++ language">
+            <span class="arrow-right"></span>
             <div class="text-box">
                 <h2>C++ Language</h2>
                 <small>2024</small>
@@ -194,11 +182,11 @@
                     As you continue your coding journey, remember the problem-solving skills and perseverance you've
                     cultivated. Let your newfound knowledge fuel your creativity and drive for innovation.
                 </p>
-                <span class="right-arrow"></span>
             </div>
         </div>
-        <div class="container left">
-            <img src="./photo/HTML.png" alt="HTML">
+        <div class="container">
+            <img class="img-left" src="./photo/HTML.png" alt="HTML">
+            <span class="arrow-left"></span>
             <div class="text-box">
                 <h2>HTML</h2>
                 <small>2024</small>
@@ -207,11 +195,11 @@
                     <b>html</b> tag and the satisfaction of seeing your creations come to life in the browser. Let this
                     achievement be a stepping stone to even greater heights in your coding journey.
                 </p>
-                <span class="left-arrow"></span>
             </div>
         </div>
-        <div class="container right">
-            <img src="./photo/CSS.png" alt="php and MySQL">
+        <div class="container">
+            <img class="img-right" src="./photo/CSS.png" alt="php and MySQL">
+            <span class="arrow-right"></span>
             <div class="text-box">
                 <h2>CSS</h2>
                 <small>2024</small>
@@ -220,11 +208,11 @@
                     successful CSS layout and the joy of seeing your designs come to life in the browser. Let this
                     achievement be a testament to your perseverance and passion for mastering new skills.
                 </p>
-                <span class="right-arrow"></span>
             </div>
         </div>
-        <div class="container left">
-            <img src="./photo/PHP-and-MySQL.png" alt="php and MySQL">
+        <div class="container">
+            <img class="img-left" src="./photo/PHP-and-MySQL.png" alt="php and MySQL">
+            <span class="arrow-left"></span>
             <div class="text-box">
                 <h2>PHP and MySQL</h2>
                 <small>2024</small>
@@ -234,11 +222,11 @@
                     explore. From diving deeper into backend frameworks to experimenting with advanced database
                     architectures, there's always something new to learn and master.
                 </p>
-                <span class="left-arrow"></span>
             </div>
         </div>
-        <div class="container right">
-            <img src="./photo/Obstacle.png" alt="Opstacle Race">
+        <div class="container">
+            <img class="img-right" src="./photo/Obstacle.png" alt="Opstacle Race">
+            <span class="arrow-right"></span>
             <div class="text-box">
                 <h2>Obstacle Race</h2>
                 <small>2024</small>
@@ -247,7 +235,6 @@
                     Race is a testament to your skills and determination. Your achievement is truly commendable and
                     deserving of recognition.
                 </p>
-                <span class="right-arrow"></span>
             </div>
         </div>
     </div>
